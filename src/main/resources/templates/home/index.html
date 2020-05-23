@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>Person List</h1>
+    <a href="/create">
+        <button class="btn-create" id="btn">Create new person</button>
+    </a>
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Buttons</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="person: ${people}">
+            <td th:text="${person.people_id}" />
+            <td th:text="${person.first_name}"/>
+            <td th:text="${person.last_name}"/>
+            <td>
+                <a th:href="@{'/viewOne/' + ${person.people_id}}">
+                    <button class="btn-viewOne" id="btn_viewOne">View Info</button>
+                </a>
+                <a th:href="@{'/delete/' + ${person.people_id}}">
+                    <button class="btn-delete" id="btn_delete">Delete</button>
+                </a>
+                <a th:href="@{'/update/' + ${person.people_id}}">
+                    <button class="btn-update" id="btn_update">Update</button>
+                </a>
+            </td>
+        </tbody>
+    </table>
+</body>
+</html>

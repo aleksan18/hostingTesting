@@ -1,0 +1,49 @@
+table{
+    border-collapse: collapse;
+    width: 60%;
+}
+th{
+    background-color: lightblue;
+}
+th, td{
+    border: 1px solid black;
+    text-align: left;
+    padding: 3px;
+}
+tr:nth-child(even){
+    background-color: lightgrey;
+}
+
+
+.btn-create{
+    border:none;
+    color:black;
+    padding:5px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.btn-create:hover{
+   box-shadow: 2px 2px 2px yellow;
+}
+
+#btn{
+    background-color: greenyellow;
+}
+
+#btn_viewOne{
+    background-color: blue;
+}
+
+.btn_back{
+    color:white;
+    background-color: black;
+    margin-top: 10px;
+}
+
+#btn_delete{
+    background-color: red;
+}
+
+#btn_update{
+    background-color: blue;
+}

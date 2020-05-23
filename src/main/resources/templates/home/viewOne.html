@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+</head>
+<body>
+    <h1>Person Information</h1>
+    <span th:text="${person.people_id}"/>
+    <span th:text="${person.first_name}"/>
+    <span th:text="${person.last_name}"/>
+    <br />
+    <a href="/">
+        <button class="btn_back">Go Back</button>
+    </a>
+</body>
+</html>
